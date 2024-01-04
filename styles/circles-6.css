@@ -1,0 +1,53 @@
+.circles__circle-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.circles__circle-container .circle1 {
+    width: 83px;
+    height: 83px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.circles__circle-container .circle2 {
+    width: 166px;
+    height: 166px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.circles__circle-container .circle3 {
+    width: 249px;
+    height: 249px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.circles__circle-container .circle4 {
+    width: 332px;
+    height: 332px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.circles__circle-container .circle5 {
+    width: 415px;
+    height: 415px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circles__circle-container .circle6 {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 0;
+}

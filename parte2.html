@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 2: Bonus</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style2.css">
+    <link data-circles-stylesheet rel="stylesheet" href="styles/circles-4.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Parte 2: Bonus</h1>
+    <p>A partir del ejercicio anterior, duplicarlo y editar el nuevo archivo para lograr los siguientes puntos:</p>
+    <div class="ol-container">
+        <ol>
+            <li>Utilizar transiciones de CSS para el cambio de colores.</li>
+            <li>Permitirle al usuario cambiar los colores ingresados en el array, actualizando el select en consecuencia.</li>
+            <li>Permitir quitar y agregar más colores al array dinámicamente.</li>
+            <li>Utilizar LocalStorage para recordar los datos definidos.</li>
+            <li>Permitir elegir la cantidad de círculos concéntricos libremente, para que no sean siempre 4.</li>
+        </ol>
+    </div>
+    <div class="link-container">
+        <a class="btn" href="https://www.touristjapan.com/tours/kyoto-afternoon-tour/" target="_blank">Base de colores</a>
+    </div>
+    <div class="circles">
+        <div class="circles__controls">
+            <div class="circles__controls-add">
+                <label for="">Agregar o quitar colores</label>
+                <button data-open-modal type="button" class="btn addColor-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>                  
+                </button>
+            <dialog data-modal class="modal">
+                <div class="modal__container">
+                    <div class="modal__heading">
+                        <h1 class="modal__title">Agrega o quita un color</h1>
+                        <button data-close-modal class="modal__closeBtn">&times;</button>
+                    </div>
+                    <div class="modal__colors-container">
+                        <ul data-color-list>
+                            <li>
+                                <div class="modal__colors-display">
+                                    <label for="">Gold</label>
+                                    <button class="modal__btns">&times;</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="modal__colors-display">
+                                    <label for="">Yellow</label>
+                                    <button class="modal__btns">&times;</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__colors-add">
+
+                            <label for="newColor">Nuevo color</label>
+                            <input data-color-input type="text" name="" id="newColor">
+
+                        <button data-add-color class="modal__btns">&plus;</button>
+                    </div>
+                    <form class="modal__submit">
+                        <button type="button" class="btn">Cancelar</button>
+                        <button type="submit" data-confirm-btn class="btn">Confirmar</button>
+                    </form>
+                </div>
+            </dialog>    
+            </div>
+            <select name="" id="">
+                <option value="" disabled selected>Seleccionar Color</option>
+            </select>
+            <select data-circles-number name="" id="">
+                <option value="" disabled selected>N° de Círculos</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+            <div>
+                <label for="">Modo superpuesto</label>
+                <input data-checkbox type="checkbox" name="" id="">
+            </div>
+            <button data-reset-btn type="button" class="btn">Reset</button>
+        </div>
+        <div class="circles__circle-container">
+            <div class="circle1 circle"></div>
+            <div class="circle2 circle"></div>
+            <div class="circle3 circle"></div>
+            <div class="circle4 circle"></div>                        
+            <div class="circle5 circle"></div>                        
+            <div class="circle6 circle"></div>                        
+            <div class="circle7 circle"></div>                        
+            <div class="circle8 circle"></div>                        
+            <div class="circle9 circle"></div>                        
+            <div class="circle10 circle"></div>                        
+        </div>
+    </div>
+    <script src="parte2.js"></script>
+</body>
+</html>

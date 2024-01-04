@@ -1,0 +1,15 @@
+.circles__circle-container .circle1 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circles__circle-container .circle2 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 0;
+}

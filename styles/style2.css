@@ -1,0 +1,103 @@
+p {
+    text-align: center;
+}
+
+.ol-container {
+    display: flex;
+    justify-content: center;
+}
+
+.ol-container ol, p {
+    font-size: 1.3rem;
+}
+
+.btn.addColor-btn{
+    width: 3rem;
+    height: 3rem;
+}
+
+.circles__controls-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+dialog[open] {
+    animation: fadein 0.2s ease-in forwards;
+}
+
+@keyframes fadein{
+    0%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+
+.modal {
+    color: var(--color-gold);
+    width: 30%;
+    background-color: var(--color-yellow);
+    border-color: var(--color-gold);
+}
+
+@media(max-width: 1000px) {
+    .modal {
+        width: 50%;
+    }
+}
+@media(max-width: 600px) {
+    .modal {
+        width: 80%;
+    }
+}
+
+.modal__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.modal__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__title {
+    margin: 0;
+}
+
+.modal__colors-container ul {
+    list-style: none;
+}
+
+.modal__closeBtn, .modal__btns {
+    background-color: transparent;
+    border: none;
+    color: var(--color-gold);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.modal__btns {
+    font-size: 2rem;
+}
+
+.modal__colors-display, .modal__colors-add {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+
+.modal__submit {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
